@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl City – Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="top-nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo" style="background: transparent;">
+          <img src="img/logo.png" alt="Vinyl City logo"
+               style="width:100%; height:100%; object-fit:contain;" />
+        </div>
+      </a>
+
+      <div class="nav-tabs">
+        <button class="nav-tab active" onclick="location.href='index.html'">Home</button>
+        <button class="nav-tab" onclick="location.href='vinyl.html'">Vinyl</button>
+        <button class="nav-tab" onclick="location.href='cd.html'">CD</button>
+        <button class="nav-tab" onclick="location.href='digital.html'">Digital</button>
+      </div>
+
+      <div class="nav-right">
+        <a href="auth.html" class="icon-pill">
+          <img src="img/user.png" alt="Account" />
+        </a>
+        <a href="cart.html" class="icon-pill">
+          <img src="img/cart.png" alt="Cart" />
+        </a>
+        <a href="auth.html" class="login-chip">Login</a>
+      </div>
+    </header>
+
+    <!-- ADMIN DASHBOARD -->
+    <section>
+      <div class="section-title">
+        <h2>Admin Dashboard</h2>
+        <small>Approve artist accounts and monitor transactions.</small>
+      </div>
+
+      <div class="admin-layout">
+
+        <!-- ARTIST APPROVALS -->
+        <div class="panel">
+          <h3 class="admin-section-title">Artist approvals</h3>
+          <p class="admin-section-sub">
+            Review new artist sign-ups before they can publish records.
+          </p>
+
+          <div class="admin-list">
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Ali Qureshi</span>
+                <span class="admin-meta">ali@gmail.com</span>
+              </div>
+              <div>
+                <span class="badge badge-pending">Pending</span>
+                <button class="btn-primary btn-small" type="button">Approve</button>
+                <button class="btn-ghost btn-small" type="button">Reject</button>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Peter</span>
+                <span class="admin-meta">peter@gmail.com</span>
+              </div>
+              <div>
+                <span class="badge badge-pending">Pending</span>
+                <button class="btn-primary btn-small" type="button">Approve</button>
+                <button class="btn-ghost btn-small" type="button">Reject</button>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Xhavit</span>
+                <span class="admin-meta">xhavit@gmail.com</span>
+              </div>
+              <div>
+                <span class="badge badge-pending">Pending</span>
+                <button class="btn-primary btn-small" type="button">Approve</button>
+                <button class="btn-ghost btn-small" type="button">Reject</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RECENT TRANSACTIONS -->
+        <div class="panel">
+          <h3 class="admin-section-title">Recent Transactions</h3>
+          <p class="admin-section-sub">
+            Here are recent transactions.
+          </p>
+
+          <div class="admin-list">
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Order #1</span>
+                <span class="admin-meta">After Hours – The Weeknd – Vinyl – $29.99</span>
+              </div>
+              <div>
+                <span class="badge badge-done">Completed</span>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Order #2</span>
+                <span class="admin-meta">After Hours – The Weeknd – Vinyl – $29.99</span>
+              </div>
+              <div>
+                <span class="badge badge-done">Completed</span>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Order #3</span>
+                <span class="admin-meta">Starboy – The Weeknd – Digital – $19.99</span>
+              </div>
+              <div>
+                <span class="badge badge-flag">Flagged</span>
+                <button class="btn-ghost btn-small" type="button">Review</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><br />
+          <a href="vinyl.html">Vinyl</a><br />
+          <a href="cd.html">CD</a><br />
+          <a href="digital.html">Digital</a><br />
+          <a href="auth.html">Customer Support</a>
+        </nav>
+
+        <div class="footer-right">
+          <img src="img/logo-white.png" alt="Vinyl City logo" class="footer-logo" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Online Vinyl City. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

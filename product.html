@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl City – Album Detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="top-nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo" style="background: transparent;">
+          <img src="img/logo.png" alt="Vinyl City logo"
+               style="width:100%; height:100%; object-fit:contain;" />
+        </div>
+      </a>
+
+      <div class="nav-tabs">
+        <button class="nav-tab active" data-nav="home"
+                onclick="location.href='index.html'">Home</button>
+        <button class="nav-tab" data-nav="vinyl"
+                onclick="location.href='vinyl.html'">Vinyl</button>
+        <button class="nav-tab" data-nav="cd"
+                onclick="location.href='cd.html'">CD</button>
+        <button class="nav-tab" data-nav="digital"
+                onclick="location.href='digital.html'">Digital</button>
+      </div>
+
+      <div class="nav-right">
+        <a href="auth.html" class="icon-pill" title="Account">
+          <img src="img/user.png" alt="Account" />
+        </a>
+        <a href="cart.html" class="icon-pill" title="Cart">
+          <img src="img/cart.png" alt="Cart" />
+        </a>
+        <a href="auth.html" class="login-chip">Login</a>
+      </div>
+    </header>
+
+    <!-- PRODUCT PAGE -->
+    <section>
+      <div class="section-title">
+        <h2>Album Detail</h2>
+        <small>Lorem Ipsum</small>
+      </div>
+
+      <!-- Top: cover + main product info -->
+      <div class="album-layout">
+        <!-- Album artwork -->
+        <div class="album-art">
+          <div class="album-art-inner">
+            <img src="img/disc.png" alt="After Hours album and disc" />
+          </div>
+        </div>
+
+        <!-- Album info -->
+        <div class="album-info">
+          <h3>After Hours</h3>
+          <p class="album-artist">The Weeknd</p>
+
+          <div class="album-price">$24.99</div>
+
+          <div class="album-meta">
+            <span>Format: Vinyl</span>
+            <span>Availability: <span class="in-stock">In Stock</span></span>
+          </div>
+
+          <div class="form-row" style="margin-top: 6px;">
+            <label class="form-label" for="format-select">Choose format:</label>
+            <select id="format-select" class="form-select">
+              <option>Vinyl</option>
+              <option>CD</option>
+              <option>Digital</option>
+            </select>
+          </div>
+
+          <div class="buy-row">
+            <div class="qty-control">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+            <button class="btn-primary" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: description + tracklist -->
+      <div class="album-lower">
+        <!-- Description -->
+        <div class="panel album-block">
+          <h4>Description</h4>
+          <p>
+            After Hours is the fourth studio album by The Weeknd, featuring a blend
+            of dark pop, R&B and synthwave influences. This edition includes the
+            full-length LP on premium vinyl with high-quality artwork.
+          </p>
+        </div>
+
+        <!-- Tracklist -->
+        <div class="panel album-block">
+          <h4>Tracklist</h4>
+          <p>01 - Alone Again</p>
+          <p>02 - Too Late</p>
+          <p>03 - Hardest to Love</p>
+          <p>04 - Scared to Live</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><br />
+          <a href="vinyl.html">Vinyl</a><br />
+          <a href="cd.html">CD</a><br />
+          <a href="digital.html">Digital</a><br />
+          <a href="auth.html">Customer Support</a>
+        </nav>
+
+        <div class="footer-right">
+          <img src="img/logo-white.png" alt="Vinyl City logo" class="footer-logo" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Online Vinyl City. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+</body>
+
+</html>

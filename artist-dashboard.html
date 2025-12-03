@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl City – Artist Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="top-nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo" style="background: transparent;">
+          <img src="img/logo.png" alt="Vinyl City logo"
+               style="width:100%; height:100%; object-fit:contain;" />
+        </div>
+      </a>
+
+      <div class="nav-tabs">
+        <button class="nav-tab active" onclick="location.href='index.html'">Home</button>
+        <button class="nav-tab" onclick="location.href='vinyl.html'">Vinyl</button>
+        <button class="nav-tab" onclick="location.href='cd.html'">CD</button>
+        <button class="nav-tab" onclick="location.href='digital.html'">Digital</button>
+      </div>
+
+      <div class="nav-right">
+        <a href="auth.html" class="icon-pill" title="Account">
+          <img src="img/user.png" alt="Account" />
+        </a>
+        <a href="cart.html" class="icon-pill" title="Cart">
+          <img src="img/cart.png" alt="Cart" />
+        </a>
+        <a href="auth.html" class="login-chip">Login</a>
+      </div>
+    </header>
+
+    <!-- ARTIST DASHBOARD -->
+    <section>
+      <div class="section-title">
+        <h2>Artist Dashboard</h2>
+        <small>Enter your information below to register</small>
+      </div>
+
+      <div class="dashboard-layout">
+        <!-- UPLOAD FORM -->
+        <div class="panel">
+          <h3 class="dashboard-section-title">Upload new record</h3>
+          <p class="dashboard-section-sub">
+            Fill in the details below to add a new album to the store.
+          </p>
+
+          <form class="auth-form active">
+            <div class="form-inline">
+              <div class="form-row">
+                <label class="form-label" for="album-title">Album Title:</label>
+                <input id="album-title" class="form-input" type="text" placeholder="Enter Album Name" />
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="artist-name">Artist Name:</label>
+                <input id="artist-name" class="form-input" type="text" placeholder="Enter Artist Name" />
+              </div>
+            </div>
+
+            <div class="form-inline">
+              <div class="form-row">
+                <label class="form-label" for="format">Format:</label>
+                <select id="format" class="form-select">
+                  <option>Vinyl</option>
+                  <option>CD</option>
+                  <option>Digital</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="genre">Genre:</label>
+                <input id="genre" class="form-input" type="text" placeholder="Enter Genre" />
+              </div>
+            </div>
+
+            <div class="form-inline">
+              <div class="form-row">
+                <label class="form-label" for="price">Price:</label>
+                <input id="price" class="form-input" type="text" placeholder="Enter Price" />
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="stock">Stock:</label>
+                <input id="stock" class="form-input" type="number" placeholder="Enter Number of Stock" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Cover artwork:</label>
+              <input type="file" class="form-input" />
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="desc">Description:</label>
+              <textarea id="desc" class="form-textarea" placeholder="Enter Description"></textarea>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Tracklist</label>
+
+              <div class="tracklist-grid" id="tracklist">
+                <div class="track-row">
+                  <span class="track-label">Track 1</span>
+                  <input class="form-input" type="text" placeholder="Song Name" />
+                  <input class="form-input track-file" type="file" accept=".mp3,audio/*" />
+                </div>
+                <div class="track-row">
+                  <span class="track-label">Track 2</span>
+                  <input class="form-input" type="text" placeholder="Song Name" />
+                  <input class="form-input track-file" type="file" accept=".mp3,audio/*" />
+                </div>
+              </div>
+
+              <button type="button" class="btn-ghost btn-small" id="add-track-btn">
+                + Add Another Track
+              </button>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-primary" type="button">Publish Record</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- YOUR RECORDS -->
+        <div class="panel">
+          <h3 class="dashboard-section-title">Your Records</h3>
+          <p class="dashboard-section-sub">
+            Your records are as follows.
+          </p>
+
+          <div class="admin-list">
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Starboy</span>
+                <span class="admin-meta">Vinyl</span>
+              </div>
+              <div>
+                <span class="badge badge-done">Published</span>
+                <button class="btn-ghost btn-small" type="button">Edit</button>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">After Hours</span>
+                <span class="admin-meta">CD</span>
+              </div>
+              <div>
+                <span class="badge badge-done">Published</span>
+                <button class="btn-ghost btn-small" type="button">Edit</button>
+              </div>
+            </div>
+
+            <div class="admin-row">
+              <div class="admin-main">
+                <span class="admin-title">Hurry Up Tomorrow</span>
+                <span class="admin-meta">Vinyl</span>
+              </div>
+              <div>
+                <span class="badge badge-done">Published</span>
+                <button class="btn-ghost btn-small" type="button">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <nav class="footer-nav">
+          <a href="artist-dashboard.html">Home</a><br />
+          <a href="vinyl.html">Vinyl</a><br />
+          <a href="cd.html">CD</a><br />
+          <a href="digital.html">Digital</a><br />
+          <a href="auth.html">Customer Support</a>
+        </nav>
+
+        <div class="footer-right">
+          <img src="img/logo-white.png" alt="Vinyl City logo" class="footer-logo" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Online Vinyl City. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+  <script src="artist-dashboard.js"></script>
+</body>
+</html>

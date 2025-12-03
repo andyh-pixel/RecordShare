@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl City – Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="top-nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo" style="background: transparent;">
+          <img src="img/logo.png" alt="Vinyl City logo"
+               style="width:100%; height:100%; object-fit:contain;" />
+        </div>
+      </a>
+
+      <div class="nav-tabs">
+        <button class="nav-tab" onclick="location.href='index.html'">Home</button>
+        <button class="nav-tab" onclick="location.href='vinyl.html'">Vinyl</button>
+        <button class="nav-tab" onclick="location.href='cd.html'">CD</button>
+        <button class="nav-tab active" data-nav="digital">Digital</button>
+      </div>
+
+      <div class="nav-right">
+        <a href="auth.html" class="icon-pill" title="Account">
+          <img src="img/user.png" alt="Account" />
+        </a>
+        <a href="cart.html" class="icon-pill" title="Cart">
+          <img src="img/cart.png" alt="Cart" />
+        </a>
+        <a href="auth.html" class="login-chip">Login</a>
+      </div>
+    </header>
+
+    <!-- DIGITAL LIST -->
+    <section>
+      <div class="section-title">
+        <h2>Digital</h2>
+        <small>Filter on the left, records on the right.</small>
+      </div>
+
+      <div class="layout-2col">
+        <!-- FILTERS -->
+        <aside class="filter-panel">
+          <h3>Filters</h3>
+
+          <div class="filter-section">
+            <h4>Format</h4>
+            <div class="pill-row">
+              <div class="pill" onclick="location.href='vinyl.html'">Vinyl</div>
+              <div class="pill" onclick="location.href='cd.html'">CD</div>
+              <div class="pill active">Digital</div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4>Genre</h4>
+            <div class="pill-row">
+              <div class="pill">Pop</div>
+              <div class="pill">Hip-Hop</div>
+              <div class="pill">Electronic</div>
+              <div class="pill">Indie</div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4>Price Range</h4>
+            <div class="price-text">$0 – $30</div>
+          </div>
+        </aside>
+
+        <!-- RECORD GRID -->
+        <div class="listing-panel">
+          <div class="listing-header">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Search by album or artist..."
+            />
+            <select class="select-input">
+              <option>Sort: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+
+          <div class="card-grid-4">
+            <!-- Starboy -->
+            <div class="record-card" onclick="location.href='product.html'">
+              <div class="record-cover">
+                <img src="img/starboy.png" alt="Starboy album cover" />
+              </div>
+              <div class="record-title">Starboy</div>
+              <div class="record-meta">The Weeknd</div>
+              <div class="record-footer">
+                <span>$14.99</span>
+                <span>Digital</span>
+              </div>
+            </div>
+
+            <!-- After Hours -->
+            <div class="record-card" onclick="location.href='product.html'">
+              <div class="record-cover">
+                <img src="img/AfterHours.png" alt="After Hours album cover" />
+              </div>
+              <div class="record-title">After Hours</div>
+              <div class="record-meta">The Weeknd</div>
+              <div class="record-footer">
+                <span>$14.99</span>
+                <span>Digital</span>
+              </div>
+            </div>
+
+            <!-- Random Access Memories -->
+            <div class="record-card" onclick="location.href='product.html'">
+              <div class="record-cover">
+                <img src="img/RAM.png" alt="Random Access Memories album cover" />
+              </div>
+              <div class="record-title">Random Access Memories</div>
+              <div class="record-meta">Daft Punk</div>
+              <div class="record-footer">
+                <span>$13.99</span>
+                <span>Digital</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><br />
+          <a href="vinyl.html">Vinyl</a><br />
+          <a href="cd.html">CD</a><br />
+          <a href="digital.html">Digital</a><br />
+          <a href="auth.html">Customer Support</a>
+        </nav>
+
+        <div class="footer-right">
+          <img src="img/logo-white.png" alt="Vinyl City logo" class="footer-logo" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Online Vinyl City. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+</body>
+</html>
