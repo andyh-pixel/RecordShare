@@ -29,6 +29,11 @@ body {
     font-size: 14px;
 }
 
+.nav-center button a {
+    color: black;
+    text-decoration: none;
+}
+
 .nav-center button:hover {
     background-color: #d1d1d1;
 }
@@ -55,14 +60,22 @@ button.circle {
     border-radius: 50%;
 }
 
+button.circle a {
+    color: black;
+}
+
 /* LOGIN BUTTON — black + auto width */
 button.Login {
     background-color: black;
-    color: white;
     padding: 10px 18px;
     border-radius: 20px;         /* rounded pill */
     width: auto;                 /* fit text */
     height: auto;                /* no overflow */
+}
+
+button.Login a {
+    color: white;
+    text-decoration: none;
 }
 
 button.Login:hover {
@@ -93,11 +106,15 @@ button.Login:hover {
     margin-top: 10px;
     padding: 10px 18px;
     background-color: black;
-    color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 12px;
+}
+
+.category-btn a {
+    color: white;
+    text-decoration: none;
 }
 
 .category-btn:hover {
@@ -159,7 +176,7 @@ button.Login:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
-
+  
   .product-tracklist {
     margin-top: 20px;
     background-color: #fff;
@@ -167,160 +184,3 @@ button.Login:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
-
-     /* Cart Section Layout */
-    .cart_section {
-        width: 100%;
-        padding-top: 93px;
-        padding-bottom: 111px;
-    }
-
-    .cart_title {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .cart_items {
-        margin-top: 8px;
-    }
-
-    .cart_list {
-        border: 1px solid #e8e8e8;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-    }
-
-    /* Individual Cart Item */
-    .cart_item {
-        width: 100%;
-        padding: 15px;
-        padding-right: 46px;
-    }
-
-    .cart_item_image {
-        width: 133px;
-        height: 133px;
-        float: left;
-    }
-
-    .cart_item_image img {
-        max-width: 100%;
-    }
-
-    .cart_item_info {
-        float: left;
-        width: calc(100% - 133px);
-        padding-top: 18px;
-    }
-
-    .cart_item_name {
-        margin-left: 7.53%;
-    }
-
-    .cart_item_title {
-        font-size: 14px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    .cart_item_text {
-        font-size: 18px;
-        margin-top: 35px;
-    }
-
-    .cart_item_text span {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-right: 11px;
-        transform: translateY(4px);
-    }
-
-    .cart_item_price,
-    .cart_item_total {
-        text-align: right;
-    }
-
-    /* Order Total */
-    .order_total {
-        width: 100%;
-        height: 60px;
-        margin-top: 30px;
-        border: 1px solid #e8e8e8;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        padding: 0 46px 0 15px;
-    }
-
-    .order_total_title {
-        display: inline-block;
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.5);
-        line-height: 60px;
-    }
-
-    .order_total_amount {
-        display: inline-block;
-        font-size: 18px;
-        font-weight: 500;
-        margin-left: 26px;
-        line-height: 60px;
-    }
-
-    /* Cart Buttons */
-    .cart_buttons {
-        margin-top: 60px;
-        text-align: right;
-    }
-
-    .cart_button_clear {
-        display: inline-block;
-        background: #fff;
-        color: rgba(0, 0, 0, 0.5);
-        border: 1px solid #b2b2b2;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 48px;
-        padding: 0 35px;
-        cursor: pointer;
-        outline: none;
-        margin-right: 26px;
-    }
-
-    .cart_button_clear:hover {
-        border-color: #0e8ce4;
-        color: #0e8ce4;
-    }
-
-    .cart_button_checkout {
-        display: inline-block;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 48px;
-        padding: 0 35px;
-        cursor: pointer;
-        outline: none;
-        vertical-align: top;
-        border: none;
-    }
-
-/* Account Login */
-    /* Center container */
-.center-container {
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* White form card */
-.form-card {
-    width: 100%;
-    max-width: 400px;
-    background: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
